@@ -55,7 +55,9 @@ const Hero: React.FC = () => {
           height: "100%",
           duration: 1,
           ease: "power1.inOut",
-          onStart: () => nextVideoRef.current?.play(),
+          onStart: () => {
+            nextVideoRef.current?.play();
+          },
         });
 
         gsap.from("#current-video", {
