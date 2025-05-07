@@ -2,7 +2,7 @@ import React from "react";
 
 interface ButtonProps {
   title: string;
-  id: string;
+  id?: string;
   rightIcon?: React.ReactNode;
   leftIcon?: React.ReactNode;
   containerClass?: string;

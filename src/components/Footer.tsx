@@ -1,12 +1,7 @@
-import React from "react";
 import { FaDiscord, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-interface FooterProps {
-  // Define your props here
-}
-
-const Footer: React.FC<FooterProps> = (props) => {
+const Footer = () => {
   const links = [
     { href: "https://discord.com", icon: <FaDiscord /> },
     { href: "https://github.com/AndreeChamoun", icon: <FaGithub /> },
@@ -19,9 +14,9 @@ const Footer: React.FC<FooterProps> = (props) => {
           &copy; André Chamoun 2025, All rights reserved
         </p>
         <div className="flex justify-center gap-4 md:justify-start">
-          {links.map((link) => (
+          {links.map((link, index) => (
             <a
-              key={link}
+              key={index}
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"

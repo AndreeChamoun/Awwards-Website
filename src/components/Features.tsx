@@ -1,10 +1,6 @@
 import React, { useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
 
-interface FeaturesProps {
-  // Define your props here
-}
-
 interface BentoTiltProps {
   children: React.ReactNode;
   className?: string;
@@ -43,7 +39,7 @@ const BentoTilt: React.FC<BentoTiltProps> = ({ children, className }) => {
   );
 };
 
-const Features: React.FC<FeaturesProps> = (props) => {
+const Features = () => {
   const BentoCard: React.FC<{
     src: string;
     title: React.ReactNode;
