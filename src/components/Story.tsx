@@ -19,7 +19,7 @@ const Story: React.FC<StoryProps> = () => {
       ease: "power1.inOut", //maybe remove
     });
   };
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: React.MouseEvent<HTMLImageElement>) => {
     const { clientX, clientY } = e;
     const element = frameRef.current;
 
