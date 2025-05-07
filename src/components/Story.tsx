@@ -4,11 +4,7 @@ import AnimatedTitle from "./AnimatedTitle";
 import Button from "./Button";
 import RoundedCorners from "./RoundedCorners";
 
-interface StoryProps {
-  AnimatedTitle: "string";
-}
-
-const Story: React.FC<StoryProps> = () => {
+const Story = () => {
   const frameRef = React.useRef<HTMLImageElement>(null);
   const handleMouseLeave = () => {
     const element = frameRef.current;
